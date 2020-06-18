@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 
 
-class Decrement extends Component {
+class Accruement extends Component {
     constructor(props){
         super(props);
         this.state = { number: props.start };
     }
-    handleDecrement = () => {
-        this.setState({ number: this.state.number - 1});
+    handleAccruement = () => {
+        this.setState({ number: this.state.number + 10});
     };
     render() {
         return (
             <div>
                 {this.state.number}{" "}
-                <button onClick={this.handleDecrement}>decrement</button>
+                <button onClick={this.handleAccruement}>accruement</button>
             </div>
         );
     }
 }
-export default Decrement;
+export default Accruement;
